@@ -7,6 +7,7 @@ import { CategoriesModule } from './categories/categories.module';
 import { AuthorsModule } from './authors/authors.module';
 import { MembersModule } from './members/members.module';
 import { BooksModule } from './books/books.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { BooksModule } from './books/books.module';
       synchronize: true,
       logging: false,
     }),
+    AuthModule,
     CategoriesModule,
     AuthorsModule,
     MembersModule,
